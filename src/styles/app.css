@@ -346,3 +346,378 @@
     font-size: 34px;
   }
 }
+
+/* =========================
+   EduConet Animations
+========================= */
+
+.app-animate {
+  opacity: 0;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.app-animate.is-visible {
+  opacity: 1;
+}
+
+/* Delays */
+.app-animate-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.app-animate-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.app-animate-delay-3 {
+  animation-delay: 0.36s;
+}
+
+.app-animate-delay-4 {
+  animation-delay: 0.48s;
+}
+
+/* Fade Up */
+.app-fade-up {
+  animation-name: appFadeUp;
+}
+
+/* Fade Down */
+.app-fade-down {
+  animation-name: appFadeDown;
+}
+
+/* Fade Left */
+.app-fade-left {
+  animation-name: appFadeLeft;
+}
+
+/* Fade Right */
+.app-fade-right {
+  animation-name: appFadeRight;
+}
+
+/* Zoom In */
+.app-zoom-in {
+  animation-name: appZoomIn;
+}
+
+/* Hero title animation */
+.app-hero h1 span,
+.app-hero .lead,
+.app-hero .button-wrap-default {
+  animation: appHeroFadeUp 0.8s ease both;
+}
+
+.app-hero h1 span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.app-hero h1 span:nth-child(2) {
+  animation-delay: 0.22s;
+}
+
+.app-hero .lead {
+  animation-delay: 0.36s;
+}
+
+.app-hero .button-wrap-default {
+  animation-delay: 0.5s;
+}
+
+/* Cards / boxes hover */
+.box-icon-2,
+.pricing-card,
+.app-history-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.box-icon-2:hover,
+.pricing-card:hover,
+.app-history-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 12px 12px 34px 0 rgba(49, 64, 74, 0.16);
+}
+
+/* Images subtle hover */
+.app-service-image img,
+.app-history-card img,
+.contact-visual img {
+  transition: transform 0.45s ease;
+}
+
+.app-service-image:hover img,
+.app-history-card:hover img,
+.contact-visual:hover img {
+  transform: scale(1.03);
+}
+
+/* Button animation */
+.button {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+/* Keyframes */
+@keyframes appFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes appFadeDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -28px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes appFadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(34px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes appFadeRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-34px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes appZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-animate,
+  .app-hero h1 span,
+  .app-hero .lead,
+  .app-hero .button-wrap-default,
+  .box-icon-2,
+  .pricing-card,
+  .app-history-card,
+  .app-service-image img,
+  .contact-visual img,
+  .button {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* =========================
+   EduConet Reveal Animations
+========================= */
+
+.app-reveal {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.app-reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.app-reveal-fade-up {
+  transform: translate3d(0, 36px, 0);
+}
+
+.app-reveal-fade-down {
+  transform: translate3d(0, -36px, 0);
+}
+
+.app-reveal-fade-left {
+  transform: translate3d(44px, 0, 0);
+}
+
+.app-reveal-fade-right {
+  transform: translate3d(-44px, 0, 0);
+}
+
+.app-reveal-zoom-in {
+  transform: scale(0.94);
+}
+
+.app-reveal-visible.app-reveal-fade-up,
+.app-reveal-visible.app-reveal-fade-down,
+.app-reveal-visible.app-reveal-fade-left,
+.app-reveal-visible.app-reveal-fade-right {
+  transform: translate3d(0, 0, 0);
+}
+
+.app-reveal-visible.app-reveal-zoom-in {
+  transform: scale(1);
+}
+
+/* Hero animations */
+.app-hero-title-line,
+.app-hero .lead,
+.app-hero .button {
+  opacity: 0;
+  animation: appHeroFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.app-hero-title-line:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.app-hero-title-line:nth-child(2) {
+  animation-delay: 0.22s;
+}
+
+.app-hero .lead {
+  animation-delay: 0.36s;
+}
+
+.app-hero .button {
+  animation-delay: 0.5s;
+}
+
+@keyframes appHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 34px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Hover effects */
+.box-icon-2,
+.pricing-card,
+.app-history-card,
+.box-counter {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.box-icon-2:hover,
+.pricing-card:hover,
+.app-history-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 12px 12px 34px 0 rgba(49, 64, 74, 0.16);
+}
+
+.box-counter:hover {
+  transform: translateY(-4px);
+}
+
+.app-history-card img,
+.app-service-image img,
+.contact-visual img {
+  transition: transform 0.45s ease;
+}
+
+.app-history-card:hover img,
+.app-service-image:hover img,
+.contact-visual:hover img {
+  transform: scale(1.03);
+}
+
+.button {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile navbar logo centering */
+@media (max-width: 991.98px) {
+  .app-navbar .rd-navbar-panel {
+    position: relative;
+  }
+
+  .app-navbar .rd-navbar-brand {
+    position: absolute !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    z-index: 2;
+  }
+
+  .app-navbar .rd-navbar-brand img {
+    max-width: 140px;
+    max-height: 54px;
+    object-fit: contain;
+  }
+
+  .app-nav-toggle {
+    z-index: 3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-reveal,
+  .app-hero-title-line,
+  .app-hero .lead,
+  .app-hero .button,
+  .box-icon-2,
+  .pricing-card,
+  .app-history-card,
+  .box-counter,
+  .app-history-card img,
+  .app-service-image img,
+  .contact-visual img,
+  .button {
+    opacity: 1 !important;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
