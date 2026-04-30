@@ -1,0 +1,8 @@
+node_modules/
+dist/
+_vue-*.png
+.vercel/
+node_modules
+dist
+.env
+.DS_Store
