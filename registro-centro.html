@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+  <head>
+    <title>EduConet | Registro de centros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="section page-header rd-navbar-transparent-wrap">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="44px" data-xl-stick-up-offset="44px" data-xxl-stick-up-offset="44px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse">
+              <div class="rd-navbar-aside">
+                <div class="rd-navbar-info"><div class="icon novi-icon mdi mdi-phone"></div><a href="tel:+34900000000">+34 900 000 000</a></div>
+                <ul class="list-lined"><li><a href="registro-centro.html">Acceso centros</a></li><li><a href="tarifas.html">Tarifas</a></li></ul>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main-inner">
+                <div class="rd-navbar-main">
+                  <div class="rd-navbar-panel">
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/educonet-logo.png" alt="EduConet logo" width="200" height="133"/></a></div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">Nosotros</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="tarifas.html">Tarifas</a></li>
+                        <li class="rd-nav-item active"><a class="rd-nav-link" href="registro-centro.html">Registro centros</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacto</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="breadcrumbs-custom bg-image novi-background bg-primary">
+        <div class="container">
+          <ul class="breadcrumbs-custom-path">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active">Registro de centros</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-40">
+            <div class="col-lg-5">
+              <h2>Registra tu centro</h2>
+              <p class="big">Déjanos los datos básicos del centro y te enviaremos acceso a las tarifas completas, recomendaciones iniciales y una propuesta de siguiente paso.</p>
+              <figure class="figure-light contact-visual">
+                <img class="img-responsive" src="images/educonet-team-school.jpg" alt="Equipo EduConet en una reunión con un centro educativo" width="569" height="338"/>
+              </figure>
+            </div>
+            <div class="col-lg-7">
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="register" method="post" action="bat/rd-mailform.php">
+                <div class="row row-10">
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-center" type="text" name="center" data-constraints="@Required">
+                      <label class="form-label" for="register-center">Nombre del centro</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-city" type="text" name="city" data-constraints="@Required">
+                      <label class="form-label" for="register-city">Ciudad</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="register-name">Persona de contacto</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-role" type="text" name="role" data-constraints="@Required">
+                      <label class="form-label" for="register-role">Cargo</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="register-email">Correo del centro</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-phone" type="tel" name="phone">
+                      <label class="form-label" for="register-phone">Teléfono</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-students" type="text" name="students">
+                      <label class="form-label" for="register-students">Alumnos aproximados</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <select class="form-input" id="register-interest" name="interest">
+                        <option value="Tarifas completas">Tarifas completas</option>
+                        <option value="Mantenimiento TIC">Mantenimiento TIC</option>
+                        <option value="Web o portal">Web o portal</option>
+                        <option value="Plan integral">Plan integral</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="register-message">Necesidad principal</label>
+                      <textarea class="form-input" id="register-message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 d-none">
+                    <div class="form-wrap">
+                      <input class="form-input" id="register-website" type="text" name="website" tabindex="-1" autocomplete="off">
+                      <label class="form-label" for="register-website">Web</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="checkbox-inline privacy-check"><input type="checkbox" name="privacy" value="1" data-constraints="@Required"> Acepto la política de privacidad y el tratamiento de mis datos para gestionar el registro del centro.</label>
+                  </div>
+                  <div class="col-md-5 col-xl-4">
+                    <button class="button button-size-1 button-block button-primary" type="submit">Registrar centro</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section footer-classic">
+        <div class="footer-inner-1">
+          <div class="container">
+            <div class="row row-40">
+              <div class="col-md-5 col-lg-3">
+                <h5>Contacto</h5>
+                <ul class="contact-list font-weight-bold">
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left"><div class="icon icon-sm icon-primary novi-icon mdi mdi-map-marker"></div></div>
+                      <div class="unit-body"><span>Calle Edu, 10 <br>28001 Madrid, España</span></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left"><div class="icon icon-sm icon-primary novi-icon mdi mdi-phone"></div></div>
+                      <div class="unit-body"><a href="tel:+34900000000">+34 900 000 000</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left"><div class="icon icon-sm icon-primary novi-icon mdi mdi-clock"></div></div>
+                      <div class="unit-body"><ul class="list-0"><li>Lun-Vie: 9:00-18:00</li><li>Sáb-Dom: Cerrado</li></ul></div>
+                    </div>
+                  </li>
+                </ul>
+                <a class="d-inline-block big" href="mailto:info@educonet.es">info@educonet.es</a>
+              </div>
+              <div class="col-md-6 col-lg-5">
+                <h5>Enlaces</h5>
+                <div class="row row-5 justify-content-between">
+                  <div class="col-sm-6">
+                    <ul class="footer-list big">
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="about.html">Nosotros</a></li>
+                      <li><a href="servicios.html">Servicios</a></li>
+                      <li><a href="tarifas.html">Tarifas</a></li>
+                      <li><a href="registro-centro.html">Registro centros</a></li>
+                      <li><a href="contacts.html">Contacto</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 col-lg-6 col-xxl-5">
+                    <ul class="footer-list big">
+                      <li><a href="servicios.html">Mantenimiento</a></li>
+                      <li><a href="servicios.html">Desarrollo</a></li>
+                      <li><a href="servicios.html">Diseño</a></li>
+                      <li><a href="tarifas.html">Planes</a></li>
+                      <li><a href="registro-centro.html">Acceso tarifas</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <h5>Especialidades</h5>
+                <ul class="footer-list big"><li>Redes y Wi-Fi escolar</li><li>Webs y portales para familias</li><li>Soporte TIC continuo</li><li>Diseño UX/UI educativo</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-inner-2">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> EduConet. Todos los derechos reservados. <a href="privacidad.html">Privacidad</a> · <a href="aviso-legal.html">Aviso legal</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
